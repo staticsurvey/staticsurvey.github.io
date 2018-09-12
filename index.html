@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>New Menu Design Experiment</title>
+  <link rel="stylesheet" type="text/css" href="view.css" media="all">
+  <!-- <script type="text/javascript" src="view.js"></script> -->
+
+</head>
+
+<body id="main_body">
+
+  <img id="top" src="top.png" alt="">
+  <div id="form_container">
+
+    <h1><a>New Menu Design Experiment</a></h1>
+    <form id="form_26432" class="appnitro" action="/experiment.html" onsubmit="return handleSubmit();">
+      <div class="form_description">
+        <h2>New Menu Design Experiment</h2>
+        <p>This is your form description. Click here to edit.</p>
+      </div>
+      <ul>
+
+        <li id="li_2">
+          <label class="description" for="element_2">Name </label>
+          <div>
+            <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value="" />
+          </div>
+          <p class="guidelines" id="guide_2"><small>Participant Name</small></p>
+        </li>
+        <li id="li_1">
+          <label class="description" for="element_1">Participant Number </label>
+          <div>
+            <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value="" />
+          </div>
+          <p class="guidelines" id="guide_1"><small>Enter the participant number given to you by the coordinator. (Two
+              digit)</small></p>
+        </li>
+
+        <li class="buttons">
+          <button class="button_text">Submit</button>
+        </li>
+      </ul>
+    </form>
+    <div id="
+            footer">
+    </div>
+  </div>
+  <img id="bottom" src="bottom.png" alt="">
+</body>
+<script>
+  var handleSubmit = function () {
+    var name = document.getElementById("element_2").value
+    var id = document.getElementById("element_1").value
+    window.location.href = '/experiment?user=' + name + '&id=' + id;
+    return false
+  }
+</script>
+
+</html>
