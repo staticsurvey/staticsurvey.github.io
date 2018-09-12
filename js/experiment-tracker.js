@@ -3,6 +3,7 @@ class ExperimentTracker {
 
 		constructor() {
 				this.trials = [];
+				this.participantID = 0;
 				this.attempt = 0;
 				this.trial = null;
 				this.attempt = null;
@@ -34,6 +35,7 @@ class ExperimentTracker {
 				this
 						.trials
 						.push([
+								this.participantID,
 								this.trial,
 								this.trialID,
 								this.attempt,
@@ -55,8 +57,8 @@ class ExperimentTracker {
 		}
 
 		toCsv() {
-				var csvFile = "Experiment,Trial ID,Attempt,Menu Type,Menu Depth,Target Item,Selected Item,Start" +
-								" Time, End Time\n";
+				var csvFile = "Participant ID,Experiment,Trial ID,Attempt,Menu Type,Menu Depth,Target Item,Sele" +
+								"cted Item,Start Time, End Time\n";
 				for (var i = 0; i < this.trials.length; i++) {
 						csvFile += this
 								.trials[i]

@@ -130,6 +130,12 @@ function nextTrial() {
 				// Set IV3 state over here
 
 				tracker.newTrial();
+
+				var url = new URL(window.location);
+				var id = url
+						.searchParams
+						.get("id");
+				tracker.participantID = id;
 				tracker.trial = currentTrial;
 				tracker.trialID = trialID;
 				tracker.menuType = menuType;
