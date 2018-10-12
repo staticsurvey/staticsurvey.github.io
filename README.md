@@ -1,5 +1,5 @@
 # cs4249 Assignment 1
-
+ 
 This repository contains a basic interface and instrumentation to perform an empirical evaluation of Marking Menus and Radial Menus. You are expected to modify the code to perform the following tasks
 
 1. Implement a new Independent Variable
