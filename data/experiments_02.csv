@@ -1,7 +1,13 @@
 Trial,Menu Type,Menu Depth,Mouse Type,Target Item
-1,Marking,1,Normal,Animal
-2,Marking,2,Normal,Hats
-3,Marking,3,Normal,Parrot
+1,Radial,1,Normal,Clothing
+2,Radial,2,Normal,Hats
+3,Radial,3,Normal,Jeans
 1,Radial,1,Trackpad,Clothing
 2,Radial,2,Trackpad,Hats
 3,Radial,3,Trackpad,Jeans
+1,Marking,1,Normal,Animal
+2,Marking,2,Normal,Hats
+3,Marking,3,Normal,Parrot
+1,Marking,1,Trackpad,Animal
+2,Marking,2,Trackpad,Hats
+3,Marking,3,Trackpad,Parrot
